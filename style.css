@@ -54,5 +54,7 @@ body {
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-
+.d-none {
+  display: none;
+}
 /* button effect */
