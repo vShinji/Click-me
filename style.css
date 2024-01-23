@@ -1,8 +1,11 @@
-body {
-  background-color: black;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: black;
 }
 
 .container {
@@ -10,7 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100svh;
-  overflow-y: hidden;
 }
 
 .toothless {
@@ -25,12 +27,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.audio1 {
-  width: 50%;
-  margin: 50px auto;
-  display: block;
 }
 
 /* button */
@@ -51,6 +47,7 @@ body {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  z-index: 100;
 }
 
 .btn:hover {
@@ -74,6 +71,7 @@ body {
     #3f86ed
   );
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  z-index: 100;
 }
 
 .d-none {
