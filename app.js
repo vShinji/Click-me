@@ -15,17 +15,16 @@ button.addEventListener("click", function(e) {
   e.preventDefault();
   e.target.classList.add("d-none");
   toothless.classList.remove("d-none");
+  canvas.classList.remove("d-none");
   document.title = "Toothless Dance!";
   setTimeout(() => {
     document.body.classList.add("background-active");
   }, 16500);
 
-  const audioCtx = new AudioContext();
-  const audio1 = document.querySelector(".audio1");
-  audio1.src = "";
+  const audioContext = new AudioContext();
 
   audio.play();
-  audioSource = audioContext.createMediaElementsSource(audio1);
+  audioSource = audioContext.createMediaElementSource(audio);
   analyser = audioContext.createAnalyser();
   audioSource.connect(analyser);
   analyser.connect(audioContext.destination);
@@ -36,8 +35,6 @@ button.addEventListener("click", function(e) {
   const barWidth = canvas.width/bufferLength;
   let barHeight;
   let x;
-
-  canvas.classList.remove("d-none");
 
   function animate() {
     x = 0;
