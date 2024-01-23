@@ -2,6 +2,7 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -10,6 +11,26 @@ body {
   justify-content: center;
   height: 100svh;
   overflow-y: hidden;
+}
+
+.toothless {
+  z-index: 100;
+}
+
+/* audio canvas */
+
+.canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.audio1 {
+  width: 50%;
+  margin: 50px auto;
+  display: block;
 }
 
 /* button */
