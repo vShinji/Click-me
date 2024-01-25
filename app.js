@@ -3,6 +3,7 @@ const audio = document.getElementById("my-audio");
 const toothless = document.querySelector(".toothless");
 const canvas = document.querySelector(".canvas1");
 const ctx = canvas.getContext("2d");
+const wait = document.querySelector(".wait");
 
 let audioSource;
 let analyser;
@@ -16,9 +17,11 @@ button.addEventListener("click", function(e) {
   e.target.classList.add("d-none");
   toothless.classList.remove("d-none");
   canvas.classList.remove("d-none");
+  wait.classList.remove("d-none");
   document.title = "Toothless Dance!";
   setTimeout(() => {
     document.body.classList.add("background-active");
+    wait.classList.add("d-none");
   }, 16500);
 
   const audioContext = new AudioContext();
