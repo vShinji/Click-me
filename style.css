@@ -78,15 +78,6 @@ body {
   display: none;
 }
 
-/* timer */
-
-#timer {
-  position: absolute;
-  top: 0;
-  left: auto;
-  z-index: 100;
-}
-
 /* background animation */
 
 .background-active {
